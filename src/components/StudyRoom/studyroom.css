@@ -2,7 +2,23 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
-
+.header{
+    max-width: 1024px;
+    margin: 70px auto;
+}
+.header h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(34, 144, 255);
+    letter-spacing: 2px;
+}
+.book-icon{
+    margin-right: 15px;
+}
+.header p{
+    font-size: 18px;
+    color: rgb(71, 163, 255);
+}
 .cart-container{
     background-color: rgb(136, 209, 251);
     width: 100%;
