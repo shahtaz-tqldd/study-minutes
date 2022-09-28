@@ -1,9 +1,12 @@
 import React from 'react'
 import './course.css'
 
-const Course = () => {
+const Course = (props) => {
+    const {courseName} = props.course
   return (
-    <div>Course</div>
+    <div>
+        <h3>{courseName}</h3>
+    </div>
   )
 }
 

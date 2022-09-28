@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Course from '../Course/Course'
 import './studyroom.css'
 
 const StudyRoom = () => {
-  return (
+    const [courses, setCourses] = useState([]);
+    
+    useEffect(()=>{
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    },[])
+    
+    return (
     <div>
         <div className="course-container">
             <h2>Study Hour</h2>
             {
-                <Course></Course>
+                courses.map(course => <Course course={course}></Course>)
             }
         </div>
         <div className="cart-container">
