@@ -1,9 +1,10 @@
 import './App.css';
+import StudyRoom from './components/StudyRoom/StudyRoom';
 
 function App() {
   return (
     <div>
-     <h1>Hello, Welcome!</h1>
+     <StudyRoom></StudyRoom>
     </div>
   );
 }
