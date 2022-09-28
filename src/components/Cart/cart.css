@@ -1,0 +1,24 @@
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.profile img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.profile h2{
+    margin: 0;
+    font-size: 22px;
+    color: #222;
+}
+.profile p{
+    margin: 5px 0;
+}
+.icon{
+    margin-right: 5px;
+}

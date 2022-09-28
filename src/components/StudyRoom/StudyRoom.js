@@ -3,6 +3,7 @@ import { faBook } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react'
 import Course from '../Course/Course'
 import './studyroom.css'
+import Cart from '../Cart/Cart';
 
 const StudyRoom = () => {
     const [courses, setCourses] = useState([]);
@@ -29,7 +30,7 @@ const StudyRoom = () => {
                 </div>
             </div>
             <div className="cart-container">
-                <h2>Shahtaz Rahman</h2>
+                <Cart></Cart>
             </div>
         </div>
     )
