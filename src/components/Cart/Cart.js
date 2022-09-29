@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faCalendarCheck, faClock, faBookReader, faBook, faBookmark} from '@fortawesome/free-solid-svg-icons'
 import './cart.css'
 import profile from '../../images/profile.jpg'
 
 const Cart = (props) => {
+  const breakTime = [10, 15, 20, 30, 60];
+
+  const [clickedBreakTime, setClickedBreakTime] = useState([0])
+
+  const handleBreakTime = (number) =>{
+    const timeClicked = number;
+    setClickedBreakTime(timeClicked);
+  }
   const cart = props.cart
   let totalTime = 0;
-  let rem=0;
-  let decimal = 0;
   for(const course of cart){
     totalTime += course.time;
-    decimal = parseFloat((totalTime - Math.floor(totalTime)).toFixed(2))
+    const decimal = parseFloat((totalTime - Math.floor(totalTime)).toFixed(2))
     if(decimal>0.59 ){
-      let reminder = decimal%0.60
+      const reminder = decimal%0.60
       totalTime = Math.floor(totalTime) +1 +reminder;
     }
   }
@@ -39,17 +45,16 @@ const Cart = (props) => {
       <div className='break'>
         <h3>Add A Break</h3>
         <div className='break-container'>
-          <div>10m</div>
-          <div>15m</div>
-          <div>20m</div>
-          <div>30m</div>
-          <div>1h</div>
+          {
+            breakTime.map((number) => <div onClick={()=> handleBreakTime(number)}>{number}m</div>)
+          }
+          
         </div>
       </div>
       <div className='details'>
         <h3>Study Details</h3>
         <div>Total study time <span>{totalTime.toFixed(2)} h</span></div>
-        <div>Break time <span>30 min</span></div>
+        <div>Break time <span>{clickedBreakTime} min</span></div>
       </div>
       <button className='btn-target'>Target Completed</button>
     </div>
