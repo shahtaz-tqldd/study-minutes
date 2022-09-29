@@ -2,7 +2,7 @@ import React from 'react'
 import './course.css'
 
 const Course = (props) => {
-    const {courseName, image, topics, time, id} = props.course
+    const {courseName, image, topics, time} = props.course
     const addToListHandle = props.addToListHandle
   return (
     <div className='course-card'>

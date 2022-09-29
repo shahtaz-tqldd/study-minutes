@@ -6,6 +6,7 @@ import profile from '../../images/profile.jpg'
 
 const Cart = (props) => {
   const breakTime = [10, 15, 20, 30, 60];
+  const notify = props.notify
 
   const [clickedBreakTime, setClickedBreakTime] = useState([0])
 
@@ -38,9 +39,10 @@ const Cart = (props) => {
           <div className='info'><FontAwesomeIcon  className='icon' icon={faCalendarCheck}/>Next Exam<br/><div>7 October, 22</div></div>
           <div className='info'><FontAwesomeIcon  className='icon' icon={faClock}/>T-minus<br/> <div>3 Days</div></div>
         </div>
-        <div className='subject'>
+        {/* <div className='subject'>
           <div className="info"><FontAwesomeIcon  className='icon' icon={faBook}/>Subject<br/><div>Physics</div> </div>
-          <div className="info"><FontAwesomeIcon  className='icon' icon={faBookmark}/>Topic<br/><div>Ideal Gas</div></div> </div>
+          <div className="info"><FontAwesomeIcon  className='icon' icon={faBookmark}/>Topic<br/><div>Ideal Gas</div></div>
+        </div> */}
       </div>
       <div className='break'>
         <h3>Add A Break</h3>
@@ -56,7 +58,7 @@ const Cart = (props) => {
         <div>Total study time <span>{totalTime.toFixed(2)} h</span></div>
         <div>Break time <span>{clickedBreakTime} min</span></div>
       </div>
-      <button className='btn-target'>Target Completed</button>
+      <button className='btn-target' onClick={()=>notify(totalTime)}>Target Completed</button>
     </div>
   )
 }

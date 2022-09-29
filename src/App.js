@@ -4,8 +4,7 @@ import StudyRoom from './components/StudyRoom/StudyRoom';
 function App() {
   return (
     <div>
-     <StudyRoom></StudyRoom>
-     
+     <StudyRoom></StudyRoom>    
     </div>
   );
 }
