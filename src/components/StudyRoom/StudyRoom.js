@@ -8,6 +8,7 @@ import Questions from '../Questions/Questions';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToLocalStorage, deleteCart, getStoredCart } from '../../utilities/addToLocalStorage';
 
 const StudyRoom = () => {
 
@@ -32,9 +33,30 @@ const StudyRoom = () => {
             .then(data => setCourses(data))
     }, [])
 
+    useEffect(()=>{
+        const storedCart = getStoredCart();
+        const savedCart = [];
+        for(const id in storedCart){
+            const addedCourse = courses.find(course => course.id == id);
+            if(addedCourse){
+                const quantity = storedCart[id]
+                addedCourse.quantity = quantity;
+                savedCart.push(addedCourse);
+
+            }
+        }
+        setCart(savedCart);
+    },[courses])
+
     const addToListHandle = (course) => {
         const newCart = [...cart, course]
         setCart(newCart)
+        addToLocalStorage(course.id)
+    }
+
+    const handleClear =()=>{
+        deleteCart();
+        setCart([]);
     }
 
     return (
@@ -60,7 +82,7 @@ const StudyRoom = () => {
                 <Questions></Questions>
             </div>
             <div className="cart-container">
-                <Cart cart={cart} notify={notify}></Cart>
+                <Cart cart={cart} notify={notify} handleClear={handleClear}></Cart>
             </div>
         </div>
     )
