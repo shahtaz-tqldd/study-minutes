@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Course from '../Course/Course'
 import './studyroom.css'
 import Cart from '../Cart/Cart';
+import Questions from '../Questions/Questions';
 
 const StudyRoom = () => {
     const [courses, setCourses] = useState([]);
@@ -40,6 +41,7 @@ const StudyRoom = () => {
                         })
                     }
                 </div>
+                <Questions></Questions>
             </div>
             <div className="cart-container">
                 <Cart cart={cart}></Cart>

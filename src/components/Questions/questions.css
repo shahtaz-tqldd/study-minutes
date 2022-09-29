@@ -1,0 +1,15 @@
+.question-container{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.question h2{
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.question p{
+    font-size: 16px;
+    margin: 10px 0 30px;
+}

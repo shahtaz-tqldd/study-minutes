@@ -57,7 +57,7 @@
     justify-content: space-between;
 }
 
-/* take a break */
+/* add a break */
 .break-container{
     display: flex;
     flex-wrap: wrap;
