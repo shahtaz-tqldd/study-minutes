@@ -2,23 +2,21 @@
     {
       "id": 1,
       "courseName": "Physics",
-      "description": "Cupidatat commodo sit et anim amet commodo qui dolore quis magna aute. Consequat exercitation cupidatat Lorem non incididunt ad sit laboris exercitation commodo magna duis. Mollit amet consequat aute ut magna Lorem non ex excepteur anim esse. Excepteur consequat dolor incididunt duis reprehenderit consequat. Fugiat ullamco elit reprehenderit qui magna mollit magna velit aliquip sit. Lorem aliqua do ipsum anim tempor mollit proident.\r\n",
-      "image": "https://static.vecteezy.com/system/resources/previews/007/566/022/original/physics-concept-icon-school-or-university-subject-idea-thin-line-illustration-molecular-structure-and-magnetism-physical-phenomenons-isolated-outline-drawing-vector.jpg",
+      "image": "https://allonlinejobalert.com/wp-content/uploads/2022/09/Blog-Image-30.jpg",
       "time": 2.0,
       "topics": [
         "Motion",
         "Vector",
         "Optics",
         "Sound and Wave",
-        "Idle Gas"
+        "Ideal Gas"
       ]
     },
     {
       "id": 2,
       "courseName": "Chemistry",
       "image": "https://img.freepik.com/free-vector/flat-chemistry-colorful-background_23-2148157680.jpg",
-      "time": 1.0,
-      "description": "Anim sit occaecat dolor elit occaecat ipsum aliqua magna proident dolor amet commodo magna. Dolore non enim excepteur ad tempor incididunt dolor aute minim exercitation laborum irure. Minim fugiat adipisicing est nostrud consectetur dolor voluptate cillum. Proident aliquip non eiusmod sunt amet in ex nisi aliquip anim voluptate ex aliqua. Laboris veniam labore elit mollit pariatur incididunt non adipisicing est deserunt dolore. Fugiat pariatur fugiat ea aute elit magna ipsum.\r\n",
+      "time": 1.3,
       "topics": [
         "Atomic Model",
         "Periodic Table",
@@ -30,8 +28,7 @@
       "id": 3,
       "courseName": "Higher Math",
       "image": "https://cosmosmagazine.com/wp-content/uploads/2022/05/math.jpg?x29533",
-      "description": "Sit nostrud sit duis magna exercitation adipisicing reprehenderit proident sit in magna ea. Nulla qui minim non Lorem veniam consectetur incididunt minim laboris adipisicing deserunt aliquip non. Fugiat esse voluptate Lorem aute esse officia eu excepteur commodo fugiat voluptate duis. Pariatur commodo dolor sunt pariatur ad qui aliqua consectetur incididunt culpa minim voluptate.\r\n",
-      "time": 2,
+      "time": 2.0,
       "topics": [
         "Matrix",
         "Straight Line",
@@ -44,8 +41,7 @@
       "id": 4,
       "courseName": "Biology",
       "image": "https://thumbs.dreamstime.com/b/biology-laboratory-workspace-science-equipment-microscope-cnceptual-scientific-research-vector-illustration-73209885.jpg",
-      "time": 1,
-      "description": "Et quis nulla eu fugiat ipsum occaecat consequat. Ad cupidatat commodo non culpa. Mollit quis duis mollit fugiat est anim adipisicing duis. Eiusmod nostrud sit labore eiusmod labore pariatur cupidatat quis occaecat fugiat sint aute culpa. Do Lorem cillum laborum ex tempor reprehenderit ad. Magna dolor qui dolore consequat est aliquip minim Lorem exercitation nostrud eiusmod sit laborum officia.\r\n",
+      "time": 1.0,
       "topics": [
         "Cell",
         "Animal Planet",
@@ -58,22 +54,20 @@
       "id": 5,
       "courseName": "Information and Technology",
       "image": "https://thumbs.dreamstime.com/b/information-technology-courses-concept-vector-illustration-software-development-programming-coding-learning-all-levels-155177013.jpg",
-      "time": 1,
-      "description": "Ut proident magna elit minim consequat minim nulla ipsum. Incididunt esse eiusmod esse irure. Occaecat est occaecat ut quis id adipisicing consequat aliquip amet dolor enim. Elit ad ut ad irure ullamco commodo nisi nisi reprehenderit sint tempor fugiat aliquip duis. Nisi pariatur reprehenderit commodo non aute irure enim quis deserunt incididunt in. Qui proident in reprehenderit eiusmod id sit amet labore qui consectetur exercitation quis. Proident proident nostrud laboris aliquip irure sint ipsum laboris incididunt eiusmod.\r\n",
+      "time": 1.0,
       "topics": [
-        "Global Village",
         "Boolian Algebra",
         "Number System",
         "C programming",
-        "HTML"
+        "HTML",
+        "Database"
       ]
     },
     {
       "id": 6,
       "courseName": "English",
       "image": "https://t3.ftcdn.net/jpg/01/96/96/64/360_F_196966424_ZSgCNTeoew0jI5ztTR0KQS9LUTQCs2ZI.jpg",
-      "time": 1,
-      "description": "Commodo duis ipsum adipisicing aute aliqua mollit. Ex velit duis duis laborum irure reprehenderit cupidatat. Labore incididunt excepteur sit ullamco esse eiusmod et magna aliquip. Reprehenderit reprehenderit officia esse excepteur ullamco amet laboris duis esse consequat id laborum tempor occaecat. Ea sit pariatur aliquip irure consequat pariatur occaecat velit. Culpa aliqua magna labore magna sint veniam laboris adipisicing qui nisi sint minim. Enim nisi exercitation labore magna magna quis culpa laborum sint velit cillum sit incididunt voluptate.\r\n",
+      "time": 1.0,
       "topics": [
         "Parts of Speech",
         "Transformation",
@@ -84,9 +78,8 @@
     {
       "id": 7,
       "courseName": "Bangla",
-      "image": "https://d2jg2pri5bpndu.cloudfront.net/groups/photo/240/850_164de39ce463fb3c809aaff51d48c869.jpg",
-      "time": 1,
-      "description": "Pariatur commodo et enim voluptate cupidatat aute deserunt sunt esse. Dolor aliquip ex est labore veniam labore minim ipsum et. Laborum sint excepteur duis consectetur.\r\n",
+      "image": "https://png.pngtree.com/png-vector/20220112/ourlarge/pngtree-21-february-bangla-calligraphy-design-for-bangladesh-png-image_4295607.png",
+      "time": 0.30,
       "topics": [
         "Poems",
         "Essay",
@@ -98,9 +91,8 @@
     {
       "id": 8,
       "courseName": "Statistics",
-      "image": "https://sfmagazine.com/wp-content/uploads/06_2019_tech_practices.jpg",
-      "time": 1,
-      "description": "Pariatur qui dolor nisi aliquip sint officia fugiat amet sint officia. Veniam ad aliqua laboris reprehenderit amet laborum mollit velit amet aute. Culpa et ullamco esse dolor. Laboris sunt labore nostrud esse in anim magna ad ut mollit. Quis non velit enim et adipisicing enim.\r\n",
+      "image": "https://img.freepik.com/free-vector/illustration-graphs_53876-28520.jpg?w=2000",
+      "time": 0.45,
       "topics": [
         "Average Curve",
         "Probablity",

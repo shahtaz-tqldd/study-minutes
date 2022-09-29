@@ -4,7 +4,19 @@ import { faGraduationCap, faCalendarCheck, faClock, faBookReader, faBook, faBook
 import './cart.css'
 import profile from '../../images/profile.jpg'
 
-const Cart = () => {
+const Cart = (props) => {
+  const cart = props.cart
+  let totalTime = 0;
+  let rem=0;
+  let decimal = 0;
+  for(const course of cart){
+    totalTime += course.time;
+    decimal = parseFloat((totalTime - Math.floor(totalTime)).toFixed(2))
+    if(decimal>0.59 ){
+      let reminder = decimal%0.60
+      totalTime = Math.floor(totalTime) +1 +reminder;
+    }
+  }
   return (
     <div className='cart-contain'>
       <div className='profile'>
@@ -22,7 +34,7 @@ const Cart = () => {
         </div>
         <div className='subject'>
           <div className="info"><FontAwesomeIcon  className='icon' icon={faBook}/>Subject<br/><div>Physics</div> </div>
-          <div className="info"><FontAwesomeIcon  className='icon' icon={faBookmark}/>Topic<br/><div>Sound and Wave</div></div> </div>
+          <div className="info"><FontAwesomeIcon  className='icon' icon={faBookmark}/>Topic<br/><div>Ideal Gas</div></div> </div>
       </div>
       <div className='break'>
         <h3>Add A Break</h3>
@@ -36,7 +48,7 @@ const Cart = () => {
       </div>
       <div className='details'>
         <h3>Study Details</h3>
-        <div>Total study time <span>5.30 h</span></div>
+        <div>Total study time <span>{totalTime.toFixed(2)} h</span></div>
         <div>Break time <span>30 min</span></div>
       </div>
       <button className='btn-target'>Target Completed</button>

@@ -8,30 +8,41 @@ import Cart from '../Cart/Cart';
 const StudyRoom = () => {
     const [courses, setCourses] = useState([]);
 
+    const [cart, setCart] = useState([])
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setCourses(data))
     }, [])
 
+    const addToListHandle = (course) =>{
+        const newCart = [...cart, course]
+        setCart(newCart)
+    }
+
     return (
         <div className='study-room'>
             <div className="course-container">
                 <div className='header'>
                     <FontAwesomeIcon className='nav-icon' icon={faNavicon}/>
-                    <h2>
-                        <FontAwesomeIcon className='book-icon' icon={faBook} />
-                        Study Hour</h2>
+                    <h2><FontAwesomeIcon className='book-icon' icon={faBook} />Study Hour</h2>
                     <p>Study Attentively, Study Daily</p>
                 </div>
                 <div className="courses">
                     {
-                        courses.map(course => <Course key={course.id} course={course}></Course>)
+                        courses.map(course => {
+                          return <Course 
+                          key={course.id} 
+                          course={course}
+                          addToListHandle ={addToListHandle}
+                          ></Course>
+                        })
                     }
                 </div>
             </div>
             <div className="cart-container">
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     )
