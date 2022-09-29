@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faNavicon } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react'
 import Course from '../Course/Course'
 import './studyroom.css'
@@ -18,6 +18,7 @@ const StudyRoom = () => {
         <div className='study-room'>
             <div className="course-container">
                 <div className='header'>
+                    <FontAwesomeIcon className='nav-icon' icon={faNavicon}/>
                     <h2>
                         <FontAwesomeIcon className='book-icon' icon={faBook} />
                         Study Hour</h2>
@@ -25,7 +26,7 @@ const StudyRoom = () => {
                 </div>
                 <div className="courses">
                     {
-                        courses.map(course => <Course course={course}></Course>)
+                        courses.map(course => <Course key={course.id} course={course}></Course>)
                     }
                 </div>
             </div>

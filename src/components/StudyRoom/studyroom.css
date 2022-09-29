@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 10fr 3fr;
 }
+.nav-icon{
+    display: none;
+}
 .header{
     max-width: 1024px;
     margin: 70px auto;
@@ -19,12 +22,13 @@
     font-size: 18px;
     color: rgb(71, 163, 255);
 }
+
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 .cart-container{
     background-color: #fff;
@@ -32,4 +36,40 @@
     height: 100vh;
     position: sticky;
     top:0;
+}
+
+/* responsive for mobile */
+@media only screen and (max-width: 767px) {
+    .nav-icon{
+        display: block;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .study-room{
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+    .header{
+        margin-top: 0;
+    }
+    .cart-container{
+        display: none;
+    }
+}
+
+/* responsive for tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+    }
+    .study-room{
+        grid-template-columns: 4fr 3fr;
+    }
+    .header{
+        padding: 0 30px;
+        margin: 0;
+    }
+    
 }

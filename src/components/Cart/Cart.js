@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faCalendarCheck, faClock } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap, faCalendarCheck, faClock, faBookReader, faBook, faBookmark} from '@fortawesome/free-solid-svg-icons'
 import './cart.css'
 import profile from '../../images/profile.jpg'
 
@@ -12,6 +12,7 @@ const Cart = () => {
         <div>
           <h2>Shahtaz Rahman</h2>
           <p><FontAwesomeIcon className='icon' icon={faGraduationCap}/>Student of Science</p>
+          <p><FontAwesomeIcon className='icon' icon={faBookReader}/>Class XII</p>
         </div>
       </div>
       <div className='exam-info'>
@@ -19,7 +20,9 @@ const Cart = () => {
           <div className='info'><FontAwesomeIcon  className='icon' icon={faCalendarCheck}/>Next Exam<br/><div>7 October, 22</div></div>
           <div className='info'><FontAwesomeIcon  className='icon' icon={faClock}/>T-minus<br/> <div>3 Days</div></div>
         </div>
-        <div className='subject'><div className="info">Subject<br/><div>Physics</div> </div><div className="info">Topic<br/><div>Sound and Wave</div></div> </div>
+        <div className='subject'>
+          <div className="info"><FontAwesomeIcon  className='icon' icon={faBook}/>Subject<br/><div>Physics</div> </div>
+          <div className="info"><FontAwesomeIcon  className='icon' icon={faBookmark}/>Topic<br/><div>Sound and Wave</div></div> </div>
       </div>
       <div className='break'>
         <h3>Add A Break</h3>
@@ -28,7 +31,7 @@ const Cart = () => {
           <div>15m</div>
           <div>20m</div>
           <div>30m</div>
-          <div>45m</div>
+          <div>1h</div>
         </div>
       </div>
       <div className='details'>
