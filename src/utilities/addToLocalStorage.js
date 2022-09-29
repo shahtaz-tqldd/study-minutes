@@ -20,6 +20,22 @@ const addToLocalStorage = id =>{
     localStorage.setItem('cart', JSON.stringify(cart))
 }
 
+const addBreakTime = time =>{
+    let breakTime;
+
+    const storedTime = localStorage.getItem('break-time')
+    if(storedTime){
+        breakTime = JSON.parse(storedTime);
+    }
+    else{
+        breakTime = {}
+    }
+    
+    breakTime = time;
+
+    localStorage.setItem('break-time', JSON.stringify(breakTime))
+}
+
 const getStoredCart =()=>{
     let cart = {};
 
@@ -30,9 +46,21 @@ const getStoredCart =()=>{
 
     return cart;
 }
+const getStoredTime =()=>{
+    let breakTime={};
+    const storedTime = localStorage.getItem('break-time')
+    if(storedTime){
+        breakTime = {storedTime}
+        return breakTime;
+    }
+    else{
+        return breakTime={};
+    }
+}
 
 const deleteCart =()=>{
     localStorage.removeItem('cart');
+    localStorage.removeItem('break-time');
 }
 
-export {addToLocalStorage, getStoredCart, deleteCart}
+export {addToLocalStorage, getStoredCart, getStoredTime, addBreakTime, deleteCart}

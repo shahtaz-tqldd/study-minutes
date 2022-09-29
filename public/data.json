@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "id": "6335c793d7a11bd15276bdbd",
       "courseName": "Physics",
       "image": "https://allonlinejobalert.com/wp-content/uploads/2022/09/Blog-Image-30.jpg",
       "time": 2.0,
@@ -10,10 +10,11 @@
         "Optics",
         "Sound and Wave",
         "Ideal Gas"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 2,
+      "id":"6335c7939ec9fbfabdf8a35c",
       "courseName": "Chemistry",
       "image": "https://img.freepik.com/free-vector/flat-chemistry-colorful-background_23-2148157680.jpg",
       "time": 1.3,
@@ -22,10 +23,11 @@
         "Periodic Table",
         "Chemical Bond",
         "Organic Chemistry"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 3,
+      "id": "6335c7930c4c826eaccd5de6",
       "courseName": "Higher Math",
       "image": "https://cosmosmagazine.com/wp-content/uploads/2022/05/math.jpg?x29533",
       "time": 2.0,
@@ -35,10 +37,11 @@
         "Circle",
         "Trigonometry",
         "Function"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 4,
+      "id": "6335c7930af2385c42a2f80f",
       "courseName": "Biology",
       "image": "https://thumbs.dreamstime.com/b/biology-laboratory-workspace-science-equipment-microscope-cnceptual-scientific-research-vector-illustration-73209885.jpg",
       "time": 1.0,
@@ -48,10 +51,11 @@
         "Reproduction",
         "Genetics",
         "Botany"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 5,
+      "id": "6335c7933f6681fc206903f8",
       "courseName": "Information and Technology",
       "image": "https://thumbs.dreamstime.com/b/information-technology-courses-concept-vector-illustration-software-development-programming-coding-learning-all-levels-155177013.jpg",
       "time": 1.0,
@@ -61,10 +65,11 @@
         "C programming",
         "HTML",
         "Database"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 6,
+      "id": "6335c79346bde6226561f615",
       "courseName": "English",
       "image": "https://t3.ftcdn.net/jpg/01/96/96/64/360_F_196966424_ZSgCNTeoew0jI5ztTR0KQS9LUTQCs2ZI.jpg",
       "time": 1.0,
@@ -73,10 +78,11 @@
         "Transformation",
         "Voice Change",
         "Composition"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 7,
+      "id": "6335c79372db1cd2b6efbae2",
       "courseName": "Bangla",
       "image": "https://png.pngtree.com/png-vector/20220112/ourlarge/pngtree-21-february-bangla-calligraphy-design-for-bangladesh-png-image_4295607.png",
       "time": 0.30,
@@ -86,10 +92,11 @@
         "Literature",
         "Grammer",
         "Ideoms and Phrase"
-      ]
+      ],
+      "quantity": 1
     },
     {
-      "id": 8,
+      "id": "6335c7934678cde9ecec6584",
       "courseName": "Statistics",
       "image": "https://img.freepik.com/free-vector/illustration-graphs_53876-28520.jpg?w=2000",
       "time": 0.45,
@@ -98,6 +105,7 @@
         "Probablity",
         "Standard Deviation",
         "Complex Devision"
-      ]
+      ],
+      "quantity": 1
     }
 ]

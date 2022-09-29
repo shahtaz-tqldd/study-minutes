@@ -2,9 +2,6 @@
     display: grid;
     grid-template-columns: 10fr 3fr;
 }
-.nav-icon{
-    display: none;
-}
 .header{
     max-width: 1024px;
     margin: 20px auto 40px;
@@ -44,9 +41,6 @@
 
 /* responsive for mobile */
 @media only screen and (max-width: 767px) {
-    .nav-icon{
-        display: block;
-    }
     .courses{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -55,9 +49,6 @@
     }
     .header{
         margin-top: 0;
-    }
-    .cart-container{
-        display: none;
     }
 }
 

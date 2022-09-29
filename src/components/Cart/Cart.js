@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faBookReader, faBook, faBookmark} from '@fortawesome/free-solid-svg-icons'
 import './cart.css'
 import profile from '../../images/profile.jpg'
+import { addBreakTime, getStoredTime, deleteCart } from '../../utilities/addToLocalStorage';
 
 const Cart = (props) => {
   const breakTime = [10, 15, 20, 30, 60];
@@ -14,7 +15,17 @@ const Cart = (props) => {
   const handleBreakTime = (number) =>{
     const timeClicked = number;
     setClickedBreakTime(timeClicked);
+    addBreakTime(timeClicked);
   }
+
+  useEffect(()=>{
+    const storedTime = getStoredTime();
+    const time = parseInt(storedTime.storedTime)
+    if(time){
+      setClickedBreakTime(time);
+    }     
+  },[])
+
   const cart = props.cart
   let totalTime = 0;
   for(const course of cart){

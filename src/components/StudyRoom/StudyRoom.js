@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook, faNavicon } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react'
 import Course from '../Course/Course'
 import './studyroom.css'
@@ -42,7 +42,6 @@ const StudyRoom = () => {
                 const quantity = storedCart[id]
                 addedCourse.quantity = quantity;
                 savedCart.push(addedCourse);
-
             }
         }
         setCart(savedCart);
@@ -64,8 +63,7 @@ const StudyRoom = () => {
             <div className="course-container">
                 <ToastContainer />
                 <div className='header'>
-                    <FontAwesomeIcon className='nav-icon' icon={faNavicon} />
-                    <h2><FontAwesomeIcon className='book-icon' icon={faBook} />Study Hour</h2>
+                    <h2><FontAwesomeIcon className='book-icon' icon={faBook} />Study Hours</h2>
                     <p>Study Attentively, Study Daily</p>
                 </div>
                 <div className="courses">
